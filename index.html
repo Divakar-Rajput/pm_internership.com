@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRIME MINISTER INTERNSHIP SCHEME</title>
+  <link rel="shortcut icon" href="assest/img/MCA.svg" type="image/x-icon">
+  <link rel="stylesheet" href="assest/maincss.css">
+  <link rel="stylesheet" href="assest/style.css">
+  <link rel="stylesheet" href="assest/media.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div id="disclaimerPopup" class="disclaimer-overlay">
+    <div class="disclaimer-card">
+      <div class="disclaimer-header">
+        <h2>Disclaimer</h2>
+        <button class="close-btn" onclick="closeDisclaimer()">×</button>
+      </div>
+
+      <div class="disclaimer-body">
+        <p>
+          This website is a clone created strictly for educational and non-commercial demonstration purposes.
+          All trademarks, logos, content, and intellectual property belong to their respective owners.
+          We do not claim ownership of the original website’s assets, and this project does not aim to replicate or
+          misuse brand identity.
+          If you are the rightful owner and would like this clone removed, please contact the developer.
+        </p>
+        <a href="https://pminternship.mca.gov.in/login/" target="_blank" class="visit-btn">Visit Original Website</a>
+      </div>
+
+      <div class="disclaimer-footer">
+        <img src="assest/img/developer.jpg" alt="Developer" />
+        <div style="font-size: 12px;">
+          <strong>Developed by:</strong> Divakar Rajput<br />
+          <a href="mailto:divakarchauhan9758@gmail.com">Divakarchauhan9758@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="header-container">
+      <div class="header-top">
+        <div class="top-container">
+          <!-- left side content -->
+          <div class="left-topheader">
+            <div style="width: 9.5vw; min-width: 62px;">
+              <img src="assest/img/MCA.svg" alt="PM Internship Scheme">
+            </div>
+            <div style="width: 9.5vw; min-width: 62px;">
+              <img src="assest/img/pm_internship_logo_eng.svg" alt="PM Internship Scheme">
+            </div>
+          </div>
+          <!-- center content -->
+          <div class="center-topheader">
+            <span>PM INTERNSHIP SCHEME</span>
+          </div>
+          <!-- right side content -->
+          <div class="right-topheader">
+            <div class="d-flex align-items-center gap-7">
+              <div class="position-relative">
+                <div class="dos_dont">
+                  <img src="assest/img/dos_dont.png" alt="">
+                </div>
+                <p class="come_and_go_popup">Do's &amp; Don'ts</p>
+              </div>
+              <button class="btn d-flex gap-2 align-items-center reader_btn" title="Screen Reader">Screen
+                Reader</button>
+              <div style="width:9vw; min-width: 62px;">
+                <img src="assest/img/logo-hi.png" alt="PM Internship Scheme" style="width: 100%;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottop-header">
+        <!-- left -->
+        <div class="left-bottomheader">
+          <div class="nablinks">
+            <div class="home_icon" style="width: 1.5rem; height: 1.5rem;">
+              <img src="assest/img/home.png" alt="" style="width: 100%;">
+            </div>
+
+            <div class="dropdown_wrapper">
+              <button class="theme_btn dropdown_btn" onclick="toggleDropdown(event)">
+                Guidelines
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true" focusable="false" height="1em" width="1em"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="dropdown_menu">
+                <div class="dropdown_content">
+                  <ul>
+                    <li><span>amendment to guidelines</span></li>
+                    <li><span>English</span></li>
+                    <li><span>hindi</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown_wrapper">
+              <button class="theme_btn dropdown_btn" onclick="toggleDropdown(event)">faqs
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true" focusable="false" height="1em" width="1em"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="dropdown_menu">
+                <div class="dropdown_content">
+                  <ul>
+                    <li><span>candidate application</span></li>
+                    <li><span>candidate financial assiatance</span></li>
+                    <li><span>candidate general information</span></li>
+                    <li><span>candidate internship juurney</span></li>
+                    <li><span>candidate registration</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <button class="theme_btn">partner conpanies</button>
+
+            <div class="dropdown_wrapper">
+              <button class="theme_btn" onclick="toggleDropdown(event)">manuals
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true" focusable="false" height="1em" width="1em"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="dropdown_menu">
+                <div class="dropdown_content">
+                  <ul>
+                    <li><span>user manual - candidate application</span></li>
+                    <li><span>user manual - candidate application (Hindi)</span></li>
+                    <li><span>user manual - candidate registration & profile creation</span></li>
+                    <li><span>user manual - candidate registration & profile creation (Hindi)</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="dropdown_wrapper">
+              <button class="theme_btn" onclick="toggleDropdown(event)">guidance videos
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true" focusable="false" height="1em" width="1em"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="dropdown_menu">
+                <div class="dropdown_content">
+                  <ul>
+                    <li><span>candidate application (English)</span></li>
+                    <li><span>candidate application (Hindi)</span></li>
+                    <li><span>candidate dashboard explained (English)</span></li>
+                    <li><span>candidate dashboard explained (Hindi)</span></li>
+                    <li><span>candidate registration & E-EYC (English)</span></li>
+                    <li><span>candidate registration & E-EYC (Hindi)</span></li>
+                    <li><span>profile complication after login (English)</span></li>
+                    <li><span>profile complication after login (Hindi)</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown_wrapper">
+              <button class="theme_btn" onclick="toggleDropdown(event)">support
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true" focusable="false" height="1em" width="1em"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="dropdown_menu">
+                <div class="dropdown_content">
+                  <ul>
+                    <li><span>call center</span></li>
+                    <li><span>raise request</span></li>
+                    <li><span>track request</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- right -->
+        <div class="right-bottomheader">
+          <div class="nablinks">
+            <select class="lang" name="lang" id="lang">
+              <option value="English">English</option>
+            </select>
+            <button class="theme_btn orange">youth registration</button>
+            <button class="theme_btn orange">login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="px-lg-4" style="margin-block: 0.5rem;">
+    <div class="container-fluid">
+      <div class="marquee_container">
+        <div class="marqueen_content">
+          <div class="marquee_text">
+            <div id="DOW_1" class="marquee_deatail"><span class="">The DBT payment portal is
+                currently down
+                for scheduled maintenance and is expected to be operational by 08.07.2025 at 12 midnight. We request
+                your
+                patience as we process the DBT and Monthly Allowances. We regret any inconvenience caused.</span></div>
+          </div>
+          <div class="marquee_text">
+            <div id="DOW_1" class="marquee_deatail"><span class="">The DBT payment portal is
+                currently down
+                for scheduled maintenance and is expected to be operational by 08.07.2025 at 12 midnight. We request
+                your
+                patience as we process the DBT and Monthly Allowances. We regret any inconvenience caused.</span></div>
+          </div>
+          <div class="marquee_text">
+            <div id="DOW_1" class="marquee_deatail"><span class="">The DBT payment portal is
+                currently down
+                for scheduled maintenance and is expected to be operational by 08.07.2025 at 12 midnight. We request
+                your
+                patience as we process the DBT and Monthly Allowances. We regret any inconvenience caused.</span></div>
+          </div>
+          <div class="marquee_text">
+            <div id="DOW_1" class="marquee_deatail"><span class="">The DBT payment portal is
+                currently down
+                for scheduled maintenance and is expected to be operational by 08.07.2025 at 12 midnight. We request
+                your
+                patience as we process the DBT and Monthly Allowances. We regret any inconvenience caused.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="banner-section">
+        <div class="banner-content">
+          <div class="read_tag">
+            <div class="text_content">
+              <div class="top_line">
+                <h3><i>Learn and Intern with</i></h3>
+              </div>
+              <div class="top_cmp">
+                <h1>TOP COMPANIES</h1>
+                <h1><i class="fs-4 ">of</i> <span>BHARAT</span></h1>
+              </div>
+              <div class="top_companies">
+                <div class="top_cmp_scroll">
+                  <div class="top_cmp_list">
+                    <!-- Logos go here -->
+                    <div class="top_companies_logo"><img src="assest/img/cmp/accenture.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/act.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/ail.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/ambuja.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/apollo.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/asianpaints.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/atul.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/axis.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/bajaj.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/bandhan.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/bayer.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/cipla.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/coalindia.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/dabar.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/dalmia.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/drlalpathlab.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/eidher.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/frotes.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/genpact.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/glory.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/grasm.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/hal.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/hcl.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/hdfc.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/hero.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/hp.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/ibm.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/indianoil.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/indusindbank.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/infosys.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/itc.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/jindal.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/jsw.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/kansai.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/kotak.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/m.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/mahindra.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/md.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/muthoot.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/meil.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/ncl.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/ntpc.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/oilindia.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/pfc.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/poergrid.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/rec.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/reliance.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/scl.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/shriram.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/suzuki.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/tatasteel.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/techmahindra.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/timesofindia.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/ultratech.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/vedanta.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/wipro.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/wipro.png" alt="Logo"></div>
+                    <!-- Duplicate logos for seamless scrolling -->
+                    <div class="top_companies_logo"><img src="assest/img/cmp/accenture.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/act.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/ail.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/ambuja.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/apollo.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/asianpaints.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/atul.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/axis.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/bajaj.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/bandhan.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/bayer.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/cipla.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/coalindia.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/dabar.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/dalmia.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/drlalpathlab.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/eidher.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/frotes.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/genpact.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/glory.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/grasm.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/hal.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/hcl.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/hdfc.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/hero.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/hp.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/ibm.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/indianoil.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/indusindbank.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/infosys.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/itc.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/jindal.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/jsw.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/kansai.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/kotak.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/m.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/mahindra.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/md.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/muthoot.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/meil.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/ncl.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/ntpc.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/oilindia.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/pfc.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/poergrid.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/rec.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/reliance.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/scl.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/shriram.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/suzuki.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/tatasteel.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/techmahindra.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/timesofindia.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/ultratech.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/vedanta.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/wipro.png" alt="Logo"></div>
+                    <div class="top_companies_logo"><img src="assest/img/cmp/wipro.png" alt="Logo"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pm_img">
+            <img src="assest/img/pm-img.webp" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="">
+      </div>
+    </div>
+  </div>
+
+  <script src="assest/main.js"></script>
+</body>
+
+</html>
