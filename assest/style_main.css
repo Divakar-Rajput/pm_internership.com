@@ -1,0 +1,340 @@
+/* start for fixed disclaimer */
+.disclaimer-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.788);
+    z-index: 9999;
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.disclaimer-card {
+    background-color: #fff;
+    max-width: 600px;
+    width: 90%;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    animation: fadeIn 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.disclaimer-header {
+    background-color: #ab1100;
+    color: white;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.disclaimer-header h2 {
+    margin: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+.close-btn {
+    background: transparent;
+    border: none;
+    background-color: #ffffff;
+    padding: 0px 8px;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.disclaimer-body {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.visit-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #003fab;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 10px;
+}
+
+.visit-btn:hover {
+    background-color: #003e7d;
+}
+
+.disclaimer-footer {
+    background-color: #e2e2e2;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.disclaimer-footer img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* end for fixed disclaimer */
+
+
+
+
+
+
+
+
+
+/* start explore opportunities */
+.sector_container {
+    background: url(img/explore.webp);
+    padding-block: 4rem;
+    overflow: hidden !important;
+}
+
+.explor_sector_h2 {
+    display: inline-block;
+    position: relative;
+    font-family: 'khand';
+    margin-bottom: 2rem;
+    text-align: center
+}
+
+.explor_sector_h2::before,
+.explor_sector_h2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 80px;
+    /* line length */
+    height: 4px;
+    border-radius: 4px;
+    background: #e87817;
+    transform: translateY(-50%);
+}
+
+.explor_sector_h2::before {
+    left: -100px;
+}
+
+.explor_sector_h2::after {
+    right: -100px;
+}
+
+.expoler_slider_main {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    border-radius: 20px;
+}
+
+.explore_slider_track {
+    position: relative;
+    width: max-content;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    box-sizing: content-box;
+    animation: slideLeft 50s linear infinite;
+}
+
+.expoler_slider_track {
+    transform: translateZ(0);
+}
+
+.explaor_slider_card {
+    flex-shrink: 0;
+    position: relative;
+    transition-property: transform;
+    display: block;
+}
+
+.explaor_slider_card p {
+    color: #414040;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.explore_body_card {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.explore_body_card img {
+    width: 100%;
+    height: 100%;
+}
+
+.explore_slider_overlay {
+    background-color: hsla(0, 0%, 100%, 0.838);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    bottom: -100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: center;
+    padding: 1rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    opacity: 0;
+    overflow: hidden;
+    transition-duration: .6s
+}
+
+.explore_slider_overlay div {
+    width: 40%;
+    max-height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore_body_card:hover .explore_slider_overlay {
+    bottom: 0;
+    opacity: 1
+}
+
+.ExploreSectors_sector_card__9ZiII>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    top: 0;
+    left: 0
+}
+
+/* end explore opportunities */
+
+/* start gallery container */
+.gallery_container {
+    background: url(img/mask.png);
+    padding-block: 4rem;
+    overflow: hidden !important;
+}
+
+.gallery_tablist {
+    background-color: #ddd;
+    border-radius: 10px;
+    /* display: flex;
+    gap: 10px;
+    justify-content: center; */
+}
+
+.gallery_tablist .tab_btn {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #ddd;
+    color: #6d6c6c;
+    cursor: pointer;
+}
+
+.gallery_tablist .tab_btn_active {
+    background-color: orange;
+    color: #ffffff;
+}
+
+.gallery_slider_main {
+    overflow-x: hidden;
+    height: auto;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.gallery_slider_track {
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
+    width: max-content;
+}
+
+.gallery_slider_card {
+    position: relative;
+    width: 300px;
+    background-color: #003fab;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid orange;
+    box-shadow: 0px 0px 10px 0px orange;
+}
+
+.gallery_slider_card img {
+    width: 100%;
+}
+
+.gallery_card_overlay {
+    background-color: hsla(0, 0%, 0%, 0.664);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    color: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    padding: 1rem;
+    transition-duration: .6s;
+    flex-wrap: wrap;
+}
+
+.gallery_card_overlay>p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 200;
+    font-family: 'Khand';
+}
+
+/* end gallery container */
