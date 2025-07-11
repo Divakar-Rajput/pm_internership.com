@@ -49,7 +49,7 @@ pm-internship-clone/
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/pm-internship-clone.git
+   git clone https://github.com/Divakar-Rajput/pm-internship-clone.git
 
 cd pm-internship-clone
 
