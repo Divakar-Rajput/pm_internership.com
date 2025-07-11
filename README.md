@@ -25,8 +25,6 @@ A responsive and modern clone of the official PM Internship website built using 
 
 ## 📸 Screenshot
 
-> Replace this image with an actual screenshot of your project.
-
 ![Project Screenshot](./ss/screenshot.png)
 
 ![Project Screenshot](./ss/screenshot1.png)
@@ -44,22 +42,5 @@ pm-internship-clone/
 ├── index.html
 └── README.md
 
-
-## 💡 How to Use
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/Divakar-Rajput/pm-internship-clone.git
-
-cd pm-internship-clone
-
-
----
-
-👉 **To Complete:**
-- Take a clean screenshot of the home page of your clone.
-- Save it as `screenshot.png` in the project root.
-- Push the image along with your code to GitHub.
-
-If you’d like, I can help generate a sample screenshot for preview. Would you like me to create one for you?
-
+## Thank you to visit 
+## Developed by @DIVAKAR_RAJPUT 
