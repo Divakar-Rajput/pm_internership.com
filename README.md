@@ -47,4 +47,13 @@ pm-internship-clone/
 
 cd pm-internship-clone
 
-cd pm-internship-clone
+
+---
+
+👉 **To Complete:**
+- Take a clean screenshot of the home page of your clone.
+- Save it as `screenshot.png` in the project root.
+- Push the image along with your code to GitHub.
+
+If you’d like, I can help generate a sample screenshot for preview. Would you like me to create one for you?
+
