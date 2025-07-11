@@ -29,6 +29,8 @@ A responsive and modern clone of the official PM Internship website built using 
 
 ![Project Screenshot](./ss/screenshot.png)
 
+![Project Screenshot](./ss/screenshot1.png)
+
 ![Project Screenshot](./ss/screenshot2.png)
 
 ![Project Screenshot](./ss/screenshot3.png)
