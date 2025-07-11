@@ -2,7 +2,7 @@
 
 A responsive and modern clone of the official PM Internship website built using HTML, CSS, JavaScript, and Bootstrap. This project aims to replicate the look and feel of the original site for learning, practice, and showcasing front-end development skills.
 
-![PM Internship Clone Preview](./screenshot.png)
+![PM Internship Clone Preview](./ss/screenshot.png)
 
 ## 🚀 Features
 
@@ -27,7 +27,11 @@ A responsive and modern clone of the official PM Internship website built using 
 
 > Replace this image with an actual screenshot of your project.
 
-![Project Screenshot](./screenshot.png)
+![Project Screenshot](./ss/screenshot.png)
+
+![Project Screenshot](./ss/screenshot2.png)
+
+![Project Screenshot](./ss/screenshot3.png)
 
 ## 📂 Folder Structure
 pm-internship-clone/
