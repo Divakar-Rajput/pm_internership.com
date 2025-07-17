@@ -1,3 +1,146 @@
+// Initialize Swiper
+const SecotorSwiper = new Swiper('.SecotorSwiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    loop: true,
+    speed: 3000,
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+    },
+    freeMode: true,
+    freeModeMomentum: false,
+    grabCursor: true,
+});
+
+const gallerySwiper = new Swiper('.gallerySwiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    loop: true,
+    speed: 3000,
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+    },
+    freeMode: true,
+    freeModeMomentum: false,
+    grabCursor: true,
+    on: {
+        slideChange: function () {
+            document.querySelectorAll('.gallerySwiper .swiper-slide').forEach(slide => {
+                slide.classList.remove('active-card');
+            });
+            const activeIndex = this.realIndex + 1;
+            const activeSlide = this.slides[activeIndex];
+            if (activeSlide) {
+                activeSlide.classList.add('active-card');
+            }
+        }
+    }
+});
+
+// Initialize Video Swiper
+const videoSwiper = new Swiper('.videoSwiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    loop: true,
+    speed: 3000,
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+    },
+    freeMode: true,
+    freeModeMomentum: false,
+    grabCursor: true,
+    on: {
+        slideChange: function () {
+            document.querySelectorAll('.videoSwiper .swiper-slide').forEach(slide => {
+                slide.classList.remove('active-card');
+            });
+            const activeIndex = this.realIndex + 1;
+            const activeSlide = this.slides[activeIndex];
+            if (activeSlide) {
+                activeSlide.classList.add('active-card');
+            }
+        }
+    }
+});
+
+// Initialize Video Swiper
+const testimanialsSwiper = new Swiper('.testimanialsSwiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    loop: true,
+    speed: 3000,
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+    },
+    freeMode: true,
+    freeModeMomentum: false,
+    grabCursor: true,
+    on: {
+        slideChange: function () {
+            document.querySelectorAll('.testimanialsSwiper .swiper-slide').forEach(slide => {
+                slide.classList.remove('active-card');
+            });
+            const activeIndex = this.realIndex + 1;
+            const activeSlide = this.slides[activeIndex];
+            if (activeSlide) {
+                activeSlide.classList.add('active-card');
+            }
+        }
+    }
+});
+// Tab button active state handling
+function openTab(evt, tabName) {
+    const tabContents = document.querySelectorAll('.tabcontent');
+    const tabButtons = document.querySelectorAll('.tab_btn');
+
+    // Hide all tabs and remove active classes
+    tabContents.forEach(content => content.style.display = 'none');
+    tabButtons.forEach(btn => btn.classList.remove('tab_btn_active'));
+
+    // Show the selected tab
+    const activeTab = document.getElementById(tabName);
+    if (activeTab) {
+        activeTab.style.display = 'block';
+
+        // Force reflow to ensure Swiper can detect new layout
+        activeTab.offsetHeight;
+
+        // Defer Swiper updates to allow full DOM paint
+        setTimeout(() => {
+            if (tabName === 'photo') {
+                gallerySwiper.update();
+                gallerySwiper.autoplay.start();
+            } else {
+                gallerySwiper.autoplay.stop();
+            }
+
+            if (tabName === 'video') {
+                videoSwiper.update();
+                videoSwiper.autoplay.start();
+            } else {
+                videoSwiper.autoplay.stop();
+            }
+            if (tabName === 'testimanials') {
+                testimanialsSwiper.update();
+                testimanialsSwiper.autoplay.start();
+            } else {
+                testimanialsSwiper.autoplay.stop();
+            }
+        }, 50); // Small delay ensures Swiper updates after visibility
+    }
+
+    // Set active class on clicked tab
+    evt.currentTarget.classList.add('tab_btn_active');
+}
+
+
+
+
+
 // start preloader overlay
 window.addEventListener("load", function () {
     const preloader = document.getElementById("preloader");
@@ -54,6 +197,7 @@ function opensidebar() {
     menuButton.classList.toggle('opened');
 }
 //end for small width sidebar
+
 //for small width sidebar dropdown
 document.querySelectorAll(".sidebar-menu li .drop_icon").forEach(icon => {
     icon.addEventListener("click", function (e) {
@@ -66,113 +210,48 @@ document.querySelectorAll(".sidebar-menu li .drop_icon").forEach(icon => {
     });
 });
 //end small width sidebar dropdown
-//for explore/sector slider 
+
+//start for gallery view
 document.addEventListener('DOMContentLoaded', function () {
-    const track = document.querySelector('.explore_slider_track');
-    const trackWidth = track.scrollWidth;
-    track.innerHTML += track.innerHTML;
-
-    let position = 0;
-    const stepSize = 1400;
-    const pauseTime = 250;
-    const speed = 2;
-
-    let movedSinceLastPause = 0;
-    let paused = false;
-
-    function animate() {
-        if (!paused) {
-            position -= speed;
-            movedSinceLastPause += speed;
-
-            if (Math.abs(position) >= trackWidth / 2) {
-                position = 0;
-                movedSinceLastPause = 0;
-                track.style.transition = 'none';
-                track.style.transform = `translateX(${position}px)`;
-            } else {
-                track.style.transform = `translateX(${position}px)`;
+    const playButtons = document.querySelectorAll('.gallery_slider_card img');
+    playButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const image = this.closest('.gallery_slider_card').querySelector('img');
+            if (image) {
+                const imagePlayer = document.getElementById('imageviewer');
+                imagePlayer.style.display = "flex";
+                const Player_image_src = document.getElementById("image");
+                Player_image_src.src = image.src;
             }
-            if (movedSinceLastPause >= stepSize) {
-                paused = true;
-                setTimeout(() => {
-                    movedSinceLastPause = 0;
-                    paused = false;
-                    requestAnimationFrame(animate);
-                }, pauseTime);
-                return;
-            }
-        }
-
-        requestAnimationFrame(animate);
-    }
-
-    animate();
-});
-// end for explore/sector slider
-
-//start gallery tab 
-const tabs = document.querySelectorAll('.tab_btn');
-tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        tabs.forEach(btn => btn.classList.remove('tab_btn_active'));
-        tab.classList.add('tab_btn_active');
+        });
     });
 });
-
-function openTab(evt, tabName) {
-    const tabContents = document.querySelectorAll('.tabcontent');
-    const tabButtons = document.querySelectorAll('.tab_btn');
-    tabContents.forEach(content => content.style.display = 'none');
-    tabButtons.forEach(btn => btn.classList.remove('tab_btn_active'));
-    const activeTab = document.getElementById(tabName);
-    if (activeTab) {
-        activeTab.style.display = 'block';
-    }
-    evt.currentTarget.classList.add('tab_btn_active');
+function closeImagePlayer() {
+    const imagePlayer = document.getElementById('imageviewer');
+    imagePlayer.style.display = "none";
 }
-//end gallery tab
+//end for gallery view
 
-//start for gallery slider
-
+//start for video player
 document.addEventListener('DOMContentLoaded', function () {
-    const track = document.querySelector('.gallery_slider_track');
-    const trackWidth = track.scrollWidth;
-    track.innerHTML += track.innerHTML;
-    let position = 0;
-    const stepSize = 1206;
-    const pauseTime = 250;
-    const speed = 2;
-    let movedSinceLastPause = 0;
-    let paused = false;
-    function animate() {
-        if (!paused) {
-            position -= speed;
-            movedSinceLastPause += speed;
-
-            if (Math.abs(position) >= trackWidth / 2) {
-                position = 0;
-                movedSinceLastPause = 0;
-                track.style.transition = 'none';
-                track.style.transform = `translateX(${position}px)`;
-            } else {
-                track.style.transform = `translateX(${position}px)`;
+    const playButtons = document.querySelectorAll('.Gallery_play_btn__eFxZZ');
+    playButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const video = this.closest('.video_slider_card').querySelector('video');
+            if (video) {
+                const videoPlayer = document.getElementById('videoPlayer');
+                videoPlayer.style.display = "flex";
+                const Player_video_src = document.getElementById("popupVideo");
+                Player_video_src.src = video.src;
+                //   Player_video_src.muted = "true";
             }
-            if (movedSinceLastPause >= stepSize) {
-                paused = true;
-                setTimeout(() => {
-                    movedSinceLastPause = 0;
-                    paused = false;
-                    requestAnimationFrame(animate);
-                }, pauseTime);
-                return;
-            }
-        }
-
-        requestAnimationFrame(animate);
-    }
-
-    animate();
+        });
+    });
 });
-
-//end gallery slider
+function closeVideoPlayer() {
+    const videoPlayer = document.getElementById('videoPlayer');
+    videoPlayer.style.display = "none";
+    const Player_video_src = document.getElementById("popupVideo");
+    Player_video_src.pause();
+}
+//end for video player

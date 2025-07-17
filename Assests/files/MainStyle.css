@@ -46,7 +46,34 @@
     font-style: normal;
     font-display: swap
 }
+.hide-scroll {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-scroll::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
 
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
 /* end font-family */
 :root {
     --btn-background: #005cab;
@@ -1184,14 +1211,6 @@ select {
     overflow: hidden !important;
 }
 
-.gallery_container .gallery_tablist {
-    background-color: #ddd;
-    border-radius: 10px;
-    /* display: flex;
-    gap: 10px;
-    justify-content: center; */
-}
-
 .gallery_container .gallery_text_h2 {
     display: inline-block;
     position: relative;
@@ -1221,13 +1240,20 @@ select {
     right: -100px;
 }
 
+.gallery_container .gallery_tablist {
+    background-color: #ddd;
+    border-radius: 10px;
+    /* display: flex;
+    gap: 10px;
+    justify-content: center; */
+}
+
 .gallery_container .gallery_tablist .tab_btn {
     padding: 5px 10px;
     border-radius: 10px;
     border: none;
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 14px;
+    font-family: var(--font-Manrope700);
+    font-size: 17px;
     background-color: #ddd;
     color: #6d6c6c;
     cursor: pointer;
@@ -1238,46 +1264,52 @@ select {
     color: #ffffff;
 }
 
-.gallery_container .gallery_slider_main {
+/* .gallery_container .gallery_slider_main {
     overflow-x: hidden;
     height: auto;
     width: 100%;
     padding: 1rem 0;
-}
+} */
 
 .gallery_container .tabcontent {
     display: none;
 }
 
-.gallery_container .gallery_slider_track {
+/* .gallery_container .gallery_slider_track {
     display: flex;
     gap: 1rem;
     padding: 0 1rem;
     width: max-content;
+} */
+.gallerySwiper .swiper-slide.active-card,
+.videoSwiper .swiper-slide.active-card,
+.testimanials .swiper-slide.active-card {
+    border: 3px solid #ff9500 !important;
+    box-shadow: 0 0 12px rgba(255, 149, 0, 0.5) !important;
+    transition: border 0.3s ease, box-shadow 0.3s ease !important;
 }
-
 .gallery_container .gallery_slider_card {
     position: relative;
     width: 385px;
-    background-color: #003fab;
+    height: 250px;
     border-radius: 5px;
-    /* overflow: hidden; */
-    border: 1px solid orange;
-    box-shadow: 0px 0px 10px 0px orange;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
 }
 
 .gallery_container .gallery_slider_card img {
     width: 100%;
+    border-radius: 5px;
 }
 
 .gallery_container .gallery_card_overlay {
-    background-color: hsla(0, 0%, 0%, 0.664);
+    background-color: hsla(0, 0%, 0%, 0.443);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     color: #ffffff;
     position: absolute;
     width: 100%;
-    height: 20%;
+    height: 13%;
     bottom: 0;
     display: flex;
     overflow: hidden;
@@ -1295,9 +1327,239 @@ select {
     font-weight: 200;
     font-family: var(--font-Khand500);
 }
+
 .gallery_container .gallery_card_overlay>a {
     color: orange;
     text-decoration: none;
 }
 
+/* video */
+.gallery_container .video_slider_main {
+    overflow-x:hidden;
+    height: auto;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.gallery_container .tabcontent {
+    display: none;
+}
+
+.gallery_container .video_slider_track {
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
+    width: max-content;
+}
+
+.gallery_container .video_slider_card {
+    position: relative;
+    width: 385px;
+    height: 217px;
+    /* background-color: #003fab; */
+    border-radius: 5px;
+    overflow: hidden;
+    /* border: 1px solid orange;
+    box-shadow: 0px 0px 10px 0px orange; */
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+}
+
+.gallery_container .video_slider_card video {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.gallery_container .video_card_overlay {
+    color: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    display: flex;
+    overflow: hidden;
+    justify-content: end;
+    padding: 5px;
+    transition-duration: .6s;
+    flex-wrap: wrap;
+}
+
+.gallery_container .video_card_overlay>button {
+    position: relative;
+    margin-inline-start: auto;
+    width: fit-content;
+    border-radius: 50%;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    border: none;
+    justify-content: center;
+    background-color: #ff9500;
+    z-index: 10;
+}
+
+.gallery_container .video_card_overlay>a {
+    color: orange;
+    text-decoration: none;
+}
+/* testimanials */
+.gallery_container .testimanials_slider_main {
+    overflow-x: hidden;
+    height: auto;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.gallery_container .tabcontent {
+    display: none;
+}
+
+.gallery_container .testimanials_slider_track {
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
+    width: max-content;
+}
+
+.gallery_container .testimanials_slider_card {
+    position: relative;
+    width: 225px;
+    height:378px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.gallery_container .testimanials_slider_card img {
+    width: 100%;
+    border-radius:5px;
+}
+
+.gallery_container .testimanials_card_overlay {
+    color: #ffffff;
+    position: absolute;
+    background-color: #000000c0;
+    width: 100%;
+    height: 40%;
+    bottom: 13px;
+    display: flex;
+    overflow: hidden;
+    justify-content: end;
+    padding: 10px;
+    transition-duration: .6s;
+    flex-wrap: wrap;
+}
+
+.gallery_container .testimanials_card_overlay button {
+    position: relative;
+    margin-inline-start: auto;
+    width: fit-content;    
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top:25px;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    border: none;
+    justify-content: center;
+    background-color: #ff9500;
+    z-index: 10;
+}
+.gallery_container .testimanials_card_overlay .testimanials_card_btn {
+  position: absolute;
+  top: -18px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery_container .testimanials_card_overlay p {
+  font-size: 12px;
+  font-family: var(--font-BeVietnamPro900);
+  font-weight: 400 !important;
+  text-transform: capitalize;
+}
+
+.gallery_container .testimanials_card_overlay p:first-child {
+  font-family: var(--font-Manrope700) !important;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.gallery_container .testimanials_card_overlay hr {
+  margin-top:14px;
+  border: 0;
+  height: 2px;
+  background-color: #ff9500;
+}
+
+.gallery_container .testimanials_card_overlay a {
+  width: 100%;
+  text-align: right !important;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  color: orange;
+  text-decoration: none;
+}
 /* end main container */
+
+
+
+/* start for video player */
+.video-player-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-player-container {
+    position: relative;
+    max-width: 90%;
+    width: 768px;
+    height: max-content;
+    background: #ff7300;
+    border: 5px solid #ff7300;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+#popupVideo {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.video-player-close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -20px;
+    right: -20px;
+    background: #ff7300;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* end for video player */
