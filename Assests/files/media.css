@@ -1,5 +1,4 @@
-/* Mobile (up to 480px) */
-@media (max-width: 480px) {
+@media (max-width: 1199px) {
     .disclaimer-card {
         max-width: 90%;
         width: 90%;
@@ -7,22 +6,22 @@
     }
 
     .disclaimer-header h2 {
-        font-size: calc((17/480)*100vw);
+        font-size: calc((17/1199)*100vw);
     }
 
     .close-btn {
         padding: 0px 10px;
-        font-size: calc((20/480)*100vw);
+        font-size: calc((20/1199)*100vw);
     }
 
     .disclaimer-body {
         padding: 1rem;
-        font-size: calc((14/480)*100vw);
+        font-size: calc((14/1199)*100vw);
     }
 
     .visit-btn {
         padding: 9px;
-        font-size: calc((13/480)*100vw);
+        font-size: calc((13/1199)*100vw);
     }
 
     .disclaimer-footer {
@@ -31,13 +30,1139 @@
     }
 
     .disclaimer-footer img {
-        width: calc((70/480)*100vw);
-        height: calc((70/480)*100vw);
+        width: calc((70/1199)*100vw);
+        height: calc((70/1199)*100vw);
     }
 
-    /* header */
+
+    .gap_for_me {
+        width: 100%;
+        height: calc((160/1199)*100vw);
+    }
+
+    .blank_space {
+        width: 100%;
+        height: calc((30/1199)*100vw);
+    }
+
+    .offers_btn {
+        justify-content: center;
+    }
+
+    /* start main container */
+    .main_container {
+        width: 95%;
+    }
+
+    /* end main container */
+
+    /* start header */
     .header-top {
-        height: calc((100/480)*100vw);
+        height: calc((85/1199)*100vw);
+    }
+
+    .center-topheader span {
+        width: 100%;
+        top: calc((10/1199)*100vw);
+        font-size: calc((35 / 1199) * 100vw);
+        transform: translate(-20%, 0%);
+    }
+
+    select {
+        font-size: calc((16 / 1199) * 100vw);
+    }
+
+    .theme_btn {
+        font-size: calc((22/1199)*100vw);
+    }
+
+    .left-topheader div img {
+        max-width: calc((110/1199)*100vw);
+    }
+
+    .gap-3 {
+        gap: .5rem !important;
+    }
+
+    .gap-4 {
+        gap: 24px !important;
+    }
+
+    .right-topheader .dos_dont img {
+        width: calc((35/1199)*100vw);
+    }
+
+    .reader_btn {
+        padding: 5px 10px;
+        font-size: calc((20/1199)*100vw);
+    }
+
+    .viksit_bharat {
+        width: calc((110/1199)*100vw);
+    }
+
+    .left-bottomheader .nablinks {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    /* end header */
+
+    /* start marquee */
+    .marquee_container {
+        width: 98%;
+        margin: auto;
+        margin-top: 10px;
+        font-size: calc((16/1199)*100vw);
+    }
+
+    /* end marquee */
+
+    /* start banner */
+    .read_tag {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .top_companies {
+        width: calc((700/1199)*100vw);
+        padding: 5px;
+    }
+
+    .top_companies_logo {
+        width: calc((80/1199)*100vw);
+        height: calc((60/1199)*100vw);
+    }
+
+    .pm_img {
+        width: calc((440/1199)*100vw);
+    }
+
+    .top_cmp h1 {
+        font-size: calc((90/1199)*100vw);
+    }
+
+    /* end banner */
+
+    /* start offer */
+    .offers_container .offers_text h2 {
+        font-size: calc((40/1199)*100vw);
+    }
+
+    .offers_container .offers_text ul li p {
+        font-size: calc((18/1199)*100vw);
+    }
+
+    .dropdown_menu {
+        right: 2% !important;
+        margin-top: 2% !important;
+    }
+
+    /* end offer */
+
+    /* start explore section */
+    .sector_container .explor_sector_h2 {
+        font-size: calc((50/1199)*100vw);
+    }
+
+    .sector_container .explore_body_card {
+        width: 100%;
+        height: 170px;
+    }
+
+    .sector_container .explaor_slider_card p {
+        font-size: calc((16/1199)*100vw);
+    }
+
+    /* end explore section */
+
+    /* start gallery section */
+    .gallery_container .gallery_tablist .tab_btn {
+        font-size: calc((20/1199)*100vw);
+    }
+
+    .gallery_container .gallery_slider_card {
+        width: calc((400/1199)*100vw);
+        height: calc((260/1199)*100vw);
+    }
+
+    .gallery_container .gallery_card_overlay {
+        width: 100%;
+        height: 17%;
+    }
+
+    .gallery_container .gallery_card_overlay>p {
+        width: 70%;
+    }
+
+    .gallery_container .gallery_card_overlay>a {
+        width: 30%;
+    }
+
+    .gallery_container .video_slider_card {
+        width: calc((450/1199)*100vw);
+        height: 255px;
+    }
+
+    .gallery_container .testimanials_slider_card {
+        width: calc((220/1199)*100vw);
+        height: 369px;
+    }
+
+    /* end gallery section */
+    /* start dashboard */
+    .home_dashboard_container .home_dashboard_card {
+        min-width: calc((130/1199)*100vw);
+    }
+
+    /* end dashboard */
+
+    /* start partner */
+    .partner_img img {
+        width: calc((150/1199)*100vw);
+    }
+
+    .home_section_title {
+        padding-inline: 9px;
+    }
+
+    /* end partner */
+
+    /* start viksit bharat */
+    .fs-2 {
+        font-size: calc((40/1199)*100vw) !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title {
+        padding: 10px 20px;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title p {
+        font-size: calc((20/1199)*100vw) !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_content_wrapper h2 span {
+        font-size: calc((60/1199)*100vw) !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_content_wrapper button {
+        font-size: 17px !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title:after {
+        width: 20px;
+        top: 47%;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title:before {
+        width: 20px;
+        top: 47%;
+    }
+
+    /* end viksit bharat */
+
+    /* start contact us */
+    .home_common_block img {
+        width: calc((340/1199)*100vw);
+    }
+
+    /* end contact us */
+
+}
+
+@media (max-width: 991px) {
+    .disclaimer-card {
+        max-width: 90%;
+        width: 90%;
+        border-radius: 8px;
+    }
+
+    .disclaimer-header h2 {
+        font-size: calc((17/991)*100vw);
+    }
+
+    .close-btn {
+        padding: 0px 10px;
+        font-size: calc((20/991)*100vw);
+    }
+
+    .disclaimer-body {
+        padding: 1rem;
+        font-size: calc((14/991)*100vw);
+    }
+
+    .visit-btn {
+        padding: 9px;
+        font-size: calc((13/991)*100vw);
+    }
+
+    .disclaimer-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .disclaimer-footer img {
+        width: calc((70/991)*100vw);
+        height: calc((70/991)*100vw);
+    }
+
+
+    .gap_for_me {
+        width: 100%;
+        height: calc((150/991)*100vw);
+    }
+
+    .blank_space {
+        width: 100%;
+        height: calc((30/991)*100vw);
+    }
+
+    .offers_btn {
+        justify-content: center;
+    }
+
+    /* start main container */
+    .main_container {
+        width: 95%;
+    }
+
+    /* end main container */
+
+    /* start header */
+    .header-top {
+        height: calc((85/991)*100vw);
+    }
+
+    .center-topheader span {
+        width: 100%;
+        top: calc((10/991)*100vw);
+        font-size: calc((35 / 991) * 100vw);
+        transform: translate(-20%, 0%);
+    }
+
+    select {
+        font-size: calc((12 / 991) * 100vw);
+    }
+
+    .theme_btn {
+        font-size: calc((16/991)*100vw);
+    }
+
+    .left-topheader div img {
+        max-width: calc((110/991)*100vw);
+    }
+
+    .gap-3 {
+        gap: .5rem !important;
+    }
+
+    .gap-4 {
+        gap: 24px !important;
+    }
+
+    .right-topheader .dos_dont img {
+        width: calc((20/991)*100vw);
+    }
+
+    .reader_btn {
+        padding: 4px;
+        font-size: calc((15/991)*100vw);
+    }
+
+    .viksit_bharat {
+        width: calc((80/991)*100vw);
+    }
+
+    .left-bottomheader .nablinks {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    /* end header */
+
+    /* start marquee */
+    .marquee_container {
+        width: 98%;
+        margin: auto;
+        margin-top: 10px;
+        font-size: calc((16/991)*100vw);
+    }
+
+    /* end marquee */
+
+    /* start banner */
+    .read_tag {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .top_companies {
+        width: calc((600/991)*100vw);
+        padding: 5px;
+    }
+
+    .top_companies_logo {
+        width: calc((80/991)*100vw);
+        height: calc((40/991)*100vw);
+    }
+
+    .pm_img {
+        width: calc((340/991)*100vw);
+    }
+
+    .top_cmp h1 {
+        font-size: calc((70/991)*100vw);
+    }
+
+    /* end banner */
+
+    /* start offer */
+    .offers_container .offers_text h2 {
+        font-size: calc((30/991)*100vw);
+    }
+
+    .offers_container .offers_text ul li p {
+        font-size: calc((15/991)*100vw);
+    }
+
+    .dropdown_menu {
+        right: 2% !important;
+        margin-top: 2% !important;
+    }
+
+    /* end offer */
+
+    /* start explore section */
+    .sector_container .explor_sector_h2 {
+        font-size: calc((23/991)*100vw);
+    }
+
+    .sector_container .explore_body_card {
+        width: 100%;
+        height: 170px;
+    }
+
+    .sector_container .explaor_slider_card p {
+        font-size: calc((16/991)*100vw);
+    }
+
+    /* end explore section */
+
+    /* start gallery section */
+    .gallery_container .gallery_tablist .tab_btn {
+        font-size: calc((20/991)*100vw);
+    }
+
+    .gallery_container .gallery_slider_card {
+        width: calc((400/991)*100vw);
+        height: calc((260/991)*100vw);
+    }
+
+    .gallery_container .gallery_card_overlay {
+        width: 100%;
+        height: 17%;
+    }
+
+    .gallery_container .gallery_card_overlay>p {
+        width: 70%;
+    }
+
+    .gallery_container .gallery_card_overlay>a {
+        width: 30%;
+    }
+
+    .gallery_container .video_slider_card {
+        width: calc((450/991)*100vw);
+        height: 255px;
+    }
+
+    .gallery_container .testimanials_slider_card {
+        width: calc((220/991)*100vw);
+        height: 369px;
+    }
+
+    /* end gallery section */
+    /* start dashboard */
+    .home_dashboard_container .home_dashboard_card {
+        min-width: calc((130/991)*100vw);
+    }
+
+    /* end dashboard */
+
+    /* start partner */
+    .partner_img img {
+        width: calc((150/991)*100vw);
+    }
+
+    .home_section_title {
+        padding-inline: 9px;
+    }
+
+    /* end partner */
+
+    /* start viksit bharat */
+    .fs-2 {
+        font-size: calc((40/991)*100vw) !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title {
+        padding: 10px 20px;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title p {
+        font-size: calc((20/991)*100vw) !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_content_wrapper h2 span {
+        font-size: calc((60/991)*100vw) !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_content_wrapper button {
+        font-size: 17px !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title:after {
+        width: 20px;
+        top: 47%;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title:before {
+        width: 20px;
+        top: 47%;
+    }
+
+    /* end viksit bharat */
+
+    /* start contact us */
+    .home_common_block img {
+        width: calc((340/991)*100vw);
+    }
+
+    /* end contact us */
+
+}
+
+@media (max-width: 768px) {
+    .disclaimer-card {
+        max-width: 90%;
+        width: 90%;
+        border-radius: 8px;
+    }
+
+    .disclaimer-header h2 {
+        font-size: calc((17/768)*100vw);
+    }
+
+    .close-btn {
+        padding: 0px 10px;
+        font-size: calc((20/768)*100vw);
+    }
+
+    .disclaimer-body {
+        padding: 1rem;
+        font-size: calc((14/768)*100vw);
+    }
+
+    .visit-btn {
+        padding: 9px;
+        font-size: calc((13/768)*100vw);
+    }
+
+    .disclaimer-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .disclaimer-footer img {
+        width: calc((70/768)*100vw);
+        height: calc((70/768)*100vw);
+    }
+
+
+    .gap_for_me {
+        width: 100%;
+        height: calc((130/768)*100vw);
+    }
+
+    .blank_space {
+        width: 100%;
+        height: calc((30/768)*100vw);
+    }
+
+    .offers_btn {
+        justify-content: center;
+    }
+
+    /* start main container */
+    .main_container {
+        width: 95%;
+    }
+
+    /* end main container */
+
+    /* start header */
+    .header-top {
+        height: calc((85/768)*100vw);
+    }
+
+    .center-topheader span {
+        width: 100%;
+        top: calc((40/768)*100vw);
+        font-size: calc((30 / 768) * 100vw);
+        transform: translate(-24%, 0%);
+    }
+
+    select {
+        font-size: calc((12 / 768) * 100vw);
+    }
+
+    .theme_btn {
+        font-size: calc((16/768)*100vw);
+    }
+
+    .left-topheader div img {
+        max-width: calc((90/768)*100vw);
+    }
+
+    .gap-3 {
+        gap: .5rem !important;
+    }
+
+    .gap-4 {
+        gap: 24px !important;
+    }
+
+    .right-topheader .dos_dont img {
+        width: calc((20/768)*100vw);
+    }
+
+    .reader_btn {
+        padding: 4px;
+        font-size: calc((13/768)*100vw);
+    }
+
+    .viksit_bharat {
+        width: calc((70/768)*100vw);
+    }
+
+    .left-bottomheader .nablinks {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    /* end header */
+
+    /* start marquee */
+    .marquee_container {
+        width: 98%;
+        margin: auto;
+        margin-top: 10px;
+        font-size: calc((16/768)*100vw);
+    }
+
+    /* end marquee */
+
+    /* start banner */
+    .read_tag {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .top_companies {
+        width: calc((400/768)*100vw);
+        padding: 5px;
+    }
+
+    .top_companies_logo {
+        width: calc((80/768)*100vw);
+        height: calc((40/768)*100vw);
+    }
+
+    .pm_img {
+        width: calc((340/768)*100vw);
+    }
+
+    .top_cmp h1 {
+        font-size: calc((70/768)*100vw);
+    }
+
+    /* end banner */
+
+    /* start offer */
+    .offers_container .offers_text h2 {
+        font-size: calc((30/768)*100vw);
+    }
+
+    .offers_container .offers_text ul li p {
+        font-size: calc((15/768)*100vw);
+    }
+
+    .dropdown_menu {
+        right: 2% !important;
+        margin-top: 2% !important;
+    }
+
+    /* end offer */
+
+    /* start explore section */
+    .sector_container .explor_sector_h2 {
+        font-size: calc((23/768)*100vw);
+    }
+
+    .sector_container .explore_body_card {
+        width: 100%;
+        height: 170px;
+    }
+
+    .sector_container .explaor_slider_card p {
+        font-size: calc((16/768)*100vw);
+    }
+
+    /* end explore section */
+
+    /* start gallery section */
+    .gallery_container .gallery_tablist .tab_btn {
+        font-size: calc((16/768)*100vw);
+    }
+
+    .gallery_container .gallery_slider_card {
+        width: calc((350/768)*100vw);
+        height: calc((225/768)*100vw);
+    }
+
+    .gallery_container .gallery_card_overlay {
+        width: 100%;
+        height: 17%;
+    }
+
+    .gallery_container .gallery_card_overlay>p {
+        width: 70%;
+    }
+
+    .gallery_container .gallery_card_overlay>a {
+        width: 30%;
+    }
+
+    .gallery_container .video_slider_card {
+        width: calc((300/768)*100vw);
+        height: 168px;
+    }
+
+    .gallery_container .testimanials_slider_card {
+        width: 180px;
+        height: 293px;
+    }
+
+    /* end gallery section */
+    /* start dashboard */
+    .home_dashboard_container .home_dashboard_card {
+        min-width: calc((130/768)*100vw);
+    }
+
+    /* end dashboard */
+
+    /* start partner */
+    .partner_img img {
+        width: calc((120/768)*100vw);
+    }
+
+    .home_section_title {
+        padding-inline: 9px;
+    }
+
+    /* end partner */
+
+    /* start viksit bharat */
+    .fs-2 {
+        font-size: calc((20/768)*100vw) !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title {
+        padding: 1px 20px;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title p {
+        font-size: calc((10/768)*100vw) !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_content_wrapper h2 span {
+        font-size: calc((30/768)*100vw) !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_content_wrapper button {
+        font-size: 10px !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title:after {
+        width: 8px;
+        top: 47%;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title:before {
+        width: 8px;
+        top: 47%;
+    }
+
+    /* end viksit bharat */
+
+    /* start contact us */
+    .home_common_block img {
+        width: calc((340/768)*100vw);
+    }
+
+    /* end contact us */
+
+}
+
+@media (max-width: 425px) {
+    .disclaimer-card {
+        max-width: 90%;
+        width: 90%;
+        border-radius: 8px;
+    }
+
+    .disclaimer-header h2 {
+        font-size: calc((17/425)*100vw);
+    }
+
+    .close-btn {
+        padding: 0px 10px;
+        font-size: calc((20/425)*100vw);
+    }
+
+    .disclaimer-body {
+        padding: 1rem;
+        font-size: calc((14/425)*100vw);
+    }
+
+    .visit-btn {
+        padding: 9px;
+        font-size: calc((13/425)*100vw);
+    }
+
+    .disclaimer-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .disclaimer-footer img {
+        width: calc((70/425)*100vw);
+        height: calc((70/425)*100vw);
+    }
+
+
+    .gap_for_me {
+        width: 100%;
+        height: calc((120/425)*100vw);
+    }
+
+    .blank_space {
+        width: 100%;
+        height: calc((30/425)*100vw);
+    }
+
+    .offers_btn {
+        justify-content: center;
+    }
+
+    /* start main container */
+    .main_container {
+        width: 95%;
+    }
+
+    /* end main container */
+
+    /* start header */
+    .header-top {
+        height: calc((70/425)*100vw);
+    }
+
+    .center-topheader span {
+        width: 100%;
+        top: calc((40/425)*100vw);
+        font-size: calc((20 / 425) * 100vw);
+        transform: translate(-24%, 0%);
+    }
+
+    select {
+        font-size: calc((12 / 425) * 100vw);
+    }
+
+    .theme_btn {
+        font-size: calc((16/425)*100vw);
+    }
+
+    .left-topheader div img {
+        max-width: calc((90/480)*100vw);
+    }
+
+    .gap-3 {
+        gap: .5rem !important;
+    }
+
+    .gap-4 {
+        gap: 24px !important;
+    }
+
+    .right-topheader .dos_dont img {
+        width: calc((20/480)*100vw);
+    }
+
+    .reader_btn {
+        padding: 4px;
+        font-size: calc((13/480)*100vw);
+    }
+
+    .viksit_bharat {
+        width: calc((70/480)*100vw);
+    }
+
+    .left-bottomheader .nablinks {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    /* end header */
+
+    /* start marquee */
+    .marquee_container {
+        width: 98%;
+        margin: auto;
+        margin-top: 10px;
+        font-size: calc((16/425)*100vw);
+    }
+
+    /* end marquee */
+
+    /* start banner */
+    .read_tag {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .top_companies {
+        width: calc((360/425)*100vw);
+        padding: 5px;
+    }
+
+    .top_companies_logo {
+        width: calc((60/425)*100vw);
+        height: calc((35/425)*100vw);
+    }
+
+    .pm_img {
+        width: calc((230/425)*100vw);
+    }
+
+    /* end banner */
+
+    /* start offer */
+    .offers_container .offers_text h2 {
+        font-size: calc((30/425)*100vw);
+    }
+
+    .offers_container .offers_text ul li p {
+        font-size: calc((15/425)*100vw);
+    }
+
+    .dropdown_menu {
+        right: 2% !important;
+        margin-top: 2% !important;
+    }
+
+    /* end offer */
+
+    /* start explore section */
+    .sector_container .explor_sector_h2 {
+        font-size: calc((23/425)*100vw);
+    }
+
+    .sector_container .explore_body_card {
+        width: 100%;
+        height: 170px;
+    }
+
+    .sector_container .explaor_slider_card p {
+        font-size: calc((16/425)*100vw);
+    }
+
+    /* end explore section */
+
+    /* start gallery section */
+    .gallery_container .gallery_tablist .tab_btn {
+        font-size: calc((16/425)*100vw);
+    }
+
+    .gallery_container .gallery_slider_card {
+        width: calc((350/425)*100vw);
+        height: calc((225/425)*100vw);
+    }
+
+    .gallery_container .gallery_card_overlay {
+        width: 100%;
+        height: 17%;
+    }
+
+    .gallery_container .gallery_card_overlay>p {
+        width: 70%;
+    }
+
+    .gallery_container .gallery_card_overlay>a {
+        width: 30%;
+    }
+
+    .gallery_container .video_slider_card {
+        width: 90%;
+        height: 168px;
+    }
+
+    .gallery_container .testimanials_slider_card {
+        width: 180px;
+        height: 293px;
+    }
+
+    /* end gallery section */
+    /* start dashboard */
+    .home_dashboard_container .home_dashboard_card {
+        min-width: calc((130/425)*100vw);
+    }
+
+    /* end dashboard */
+
+    /* start partner */
+    .partner_img img {
+        width: calc((120/425)*100vw);
+    }
+
+    .home_section_title {
+        padding-inline: 9px;
+    }
+
+    /* end partner */
+
+    /* start viksit bharat */
+    .fs-2 {
+        font-size: calc((20/425)*100vw) !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title {
+        padding: 1px 20px;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title p {
+        font-size: calc((10/425)*100vw) !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_content_wrapper h2 span {
+        font-size: calc((30/425)*100vw) !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_content_wrapper button {
+        font-size: 10px !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title:after {
+        width: 8px;
+        top: 47%;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title:before {
+        width: 8px;
+        top: 47%;
+    }
+
+    /* end viksit bharat */
+
+    /* start contact us */
+    .home_common_block img {
+        width: calc((340/425)*100vw);
+    }
+
+    /* end contact us */
+
+}
+
+@media (max-width: 375px) {
+    .disclaimer-card {
+        max-width: 90%;
+        width: 90%;
+        border-radius: 8px;
+    }
+
+    .disclaimer-header h2 {
+        font-size: calc((17/375)*100vw);
+    }
+
+    .close-btn {
+        padding: 0px 10px;
+        font-size: calc((20/375)*100vw);
+    }
+
+    .disclaimer-body {
+        padding: 1rem;
+        font-size: calc((14/375)*100vw);
+    }
+
+    .visit-btn {
+        padding: 9px;
+        font-size: calc((13/375)*100vw);
+    }
+
+    .disclaimer-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .disclaimer-footer img {
+        width: calc((70/375)*100vw);
+        height: calc((70/375)*100vw);
+    }
+
+
+    .gap_for_me {
+        width: 100%;
+        height: calc((115/375)*100vw);
+    }
+
+    .blank_space {
+        width: 100%;
+        height: calc((30/375)*100vw);
+    }
+
+    .offers_btn {
+        justify-content: center;
+    }
+
+    /* start header */
+    .header-top {
+        height: calc((68/375)*100vw);
+    }
+
+    .center-topheader span {
+        width: 100%;
+        top: calc((37/375)*100vw);
+        font-size: calc((20 / 375) * 100vw);
+        transform: translate(-35%, 0%);
+    }
+
+    select {
+        font-size: calc((7 / 375) * 100vw);
+    }
+
+    .theme_btn {
+        font-size: calc((11/375)*100vw);
     }
 
     .left-topheader div img {
@@ -45,20 +1170,11 @@
     }
 
     .gap-3 {
-        gap: .7rem !important;
+        gap: .5rem !important;
     }
 
     .gap-4 {
         gap: 10px !important;
-    }
-
-    .center-topheader span {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 100%;
-        font-size: calc((30/480)*100vw);
-        transform: translate(-35%, 0%);
     }
 
     .right-topheader .dos_dont img {
@@ -74,9 +1190,7 @@
         width: calc((70/480)*100vw);
     }
 
-    .theme_btn {
-        font-size: calc((20/480)*100vw);
-    }
+
 
     .left-bottomheader .nablinks {
         display: none;
@@ -86,96 +1200,441 @@
         display: block;
     }
 
-    .sidebar-menu li {
-        position: relative;
-    }
-
-    .dropdown-menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #ffffff;
-        backdrop-filter: blur(16px);
-        z-index: 101;
-        padding: 0px;
-        border-radius: 0px;
-        border: 2px solid #005cab;
-    }
-
-    .dropdown-menu li {
-        padding: 8px 16px;
-        border-bottom: 1px solid #005cab;
-        color: #005cab !important;
-    }
-
-    .dropdown-menu li a {
-        font-size: 1rem !important;
-    }
-
-    .sidebar-menu li.open>.dropdown-menu {
-        display: flex;
-    }
-
     /* end header */
-    .gap_for_me {
-        width: 100%;
-        height: calc((153/480)*100vw);
-    }
-
-    .blank_space {
-        width: 100%;
-        height: calc((30/480)*100vw);
-    }
 
     /* start main container */
     .main_container {
-        width: 96%;
+        width: 98%;
     }
 
     /* end main container */
 
-    /* marquee */
+    /* start marquee */
     .marquee_container {
         width: 98%;
         margin: auto;
         margin-top: 10px;
-        font-size: 12px;
+        font-size: calc((12/375)*100vw);
     }
 
     /* end marquee */
-    /* start top compaines */
+
+    /* start banner */
+    .read_tag {
+        width: 100%;
+        margin-left: 10px;
+    }
+
     .top_companies {
-        width: 300px;
+        width: calc((270/375)*100vw);
         padding: 5px;
     }
 
     .top_companies_logo {
-        width: 50px;
-        height: 25px;
-        align-items: center;
-        justify-content: center;
+        width: calc((60/375)*100vw);
+        height: calc((25/375)*100vw);
     }
 
     .pm_img {
-        width: 58%;
+        width: calc((220/375)*100vw);
+    }
+
+    /* end banner */
+
+    /* start offer */
+    .offers_container .offers_text h2 {
+        font-size: calc((24/375)*100vw);
+    }
+
+    .offers_container .offers_text ul li p {
+        font-size: calc((12/375)*100vw);
+    }
+
+    .dropdown_menu {
+        right: 0% !important;
+        margin-top: 2% !important;
+    }
+
+    /* end offer */
+
+    /* start explore section */
+    .sector_container .explor_sector_h2 {
+        font-size: calc((24/375)*100vw);
+    }
+
+    .sector_container .explore_body_card {
+        width: 97%;
+        height: 170px;
+    }
+
+    .sector_container .explaor_slider_card p {
+        font-size: calc((13/375)*100vw);
+    }
+
+    /* end explore section */
+
+    /* start gallery section */
+    .gallery_container .gallery_tablist .tab_btn {
+        font-size: calc((11/375)*100vw);
+    }
+
+    .gallery_container .gallery_slider_card {
+        width: calc((260/375)*100vw);
+        height: calc((160/375)*100vw);
+    }
+
+    .gallery_container .gallery_card_overlay {
+        width: 100%;
+        height: 21%;
+    }
+
+    .gallery_container .gallery_card_overlay>p,
+    .gallery_container .gallery_card_overlay>a {
+        width: 70%;
+    }
+
+    .gallery_container .gallery_card_overlay>a {
+        width: 30%;
+    }
+
+    .gallery_container .video_slider_card {
+        width: 245px;
+        height: 136px;
+    }
+
+    .gallery_container .testimanials_slider_card {
+        width: 180px;
+        height: 293px;
+    }
+
+    /* end gallery section */
+    /* start dashboard */
+    .home_dashboard_container .home_dashboard_card {
+        min-width: calc((130/375)*100vw);
+    }
+
+    /* end dashboard */
+
+    /* start partner */
+    .partner_img img {
+        width: calc((100/375)*100vw);
+    }
+
+    .home_section_title {
+        padding-inline: 9px;
+    }
+
+    /* end partner */
+
+    /* start viksit bharat */
+    .fs-2 {
+        font-size: calc((13/375)*100vw) !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title {
+        padding: 1px 20px;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title p {
+        font-size: calc((10/375)*100vw) !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_content_wrapper h2 span {
+        font-size: calc((23/375)*100vw) !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_content_wrapper button {
+        font-size: 10px !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title:after {
+        width: 8px;
+        top: 47%;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title:before {
+        width: 8px;
+        top: 47%;
+    }
+
+    /* end viksit bharat */
+
+    /* start contact us */
+    .home_common_block img {
+        width: calc((300/375)*100vw);
+    }
+}
+
+@media (max-width: 320px) {
+    .disclaimer-card {
+        max-width: 90%;
+        width: 90%;
+        border-radius: 8px;
+    }
+
+    .disclaimer-header h2 {
+        font-size: calc((17/320)*100vw);
+    }
+
+    .close-btn {
+        padding: 0px 10px;
+        font-size: calc((20/320)*100vw);
+    }
+
+    .disclaimer-body {
+        padding: 1rem;
+        font-size: calc((14/320)*100vw);
+    }
+
+    .visit-btn {
+        padding: 9px;
+        font-size: calc((13/320)*100vw);
+    }
+
+    .disclaimer-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .disclaimer-footer img {
+        width: calc((70/320)*100vw);
+        height: calc((70/320)*100vw);
+    }
+
+
+    .gap_for_me {
+        width: 100%;
+        height: calc((115/320)*100vw);
+    }
+
+    .blank_space {
+        width: 100%;
+        height: calc((30/320)*100vw);
     }
 
     .offers_btn {
         justify-content: center;
     }
 
-    /* end top compaines */
+    /* start header */
+    .header-top {
+        height: calc((68/320)*100vw);
+    }
+
+    .center-topheader span {
+        width: 100%;
+        top: calc((37/320)*100vw);
+        font-size: calc((20 / 320) * 100vw);
+        transform: translate(-35%, 0%);
+    }
+
+    select {
+        font-size: calc((7 / 320) * 100vw);
+    }
+
+    .theme_btn {
+        font-size: calc((11/320)*100vw);
+    }
+
+    .left-topheader div img {
+        max-width: calc((80/480)*100vw);
+    }
+
+    .gap-3 {
+        gap: .5rem !important;
+    }
+
+    .gap-4 {
+        gap: 10px !important;
+    }
+
+    .right-topheader .dos_dont img {
+        width: calc((23/480)*100vw);
+    }
+
+    .reader_btn {
+        padding: 4px;
+        font-size: calc((13/480)*100vw);
+    }
+
+    .viksit_bharat {
+        width: calc((70/480)*100vw);
+    }
+
+
+
+    .left-bottomheader .nablinks {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    /* end header */
+
+    /* start main container */
+    .main_container {
+        width: 98%;
+    }
+
+    /* end main container */
+
+    /* start marquee */
+    .marquee_container {
+        width: 98%;
+        margin: auto;
+        margin-top: 10px;
+        font-size: calc((12/320)*100vw);
+    }
+
+    /* end marquee */
+
+    /* start banner */
+    .read_tag {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .top_companies {
+        width: calc((270/320)*100vw);
+        padding: 5px;
+    }
+
+    .top_companies_logo {
+        width: calc((60/320)*100vw);
+        height: calc((25/320)*100vw);
+    }
+
+    .pm_img {
+        width: calc((220/320)*100vw);
+    }
+
+    /* end banner */
+
+    /* start offer */
+    .offers_container .offers_text h2 {
+        font-size: calc((24/320)*100vw);
+    }
+
+    .offers_container .offers_text ul li p {
+        font-size: calc((12/320)*100vw);
+    }
+
+    .dropdown_menu {
+        right: 0% !important;
+        margin-top: 2% !important;
+    }
+
+    /* end offer */
+
+    /* start explore section */
+    .sector_container .explor_sector_h2 {
+        font-size: calc((24/320)*100vw);
+    }
+
+    .sector_container .explore_body_card {
+        width: 97%;
+        height: 170px;
+    }
+
+    .sector_container .explaor_slider_card p {
+        font-size: calc((13/320)*100vw);
+    }
+
+    /* end explore section */
+
+    /* start gallery section */
+    .gallery_container .gallery_tablist .tab_btn {
+        font-size: calc((11/320)*100vw);
+    }
+
+    .gallery_container .gallery_slider_card {
+        width: calc((260/320)*100vw);
+        height: calc((160/320)*100vw);
+    }
+
+    .gallery_container .gallery_card_overlay {
+        width: 100%;
+        height: 21%;
+    }
+
+    .gallery_container .gallery_card_overlay>p,
+    .gallery_container .gallery_card_overlay>a {
+        width: 70%;
+    }
+
+    .gallery_container .gallery_card_overlay>a {
+        width: 30%;
+    }
+
+    .gallery_container .video_slider_card {
+        width: 245px;
+        height: 136px;
+    }
+
+    .gallery_container .testimanials_slider_card {
+        width: 180px;
+        height: 293px;
+    }
+
+    /* end gallery section */
+    /* start dashboard */
+    .home_dashboard_container .home_dashboard_card {
+        min-width: calc((130/320)*100vw);
+    }
+
+    /* end dashboard */
+
+    /* start partner */
+    .partner_img img {
+        width: calc((100/320)*100vw);
+    }
+
+    .home_section_title {
+        padding-inline: 9px;
+    }
+
+    /* end partner */
+
+    /* start viksit bharat */
+    .fs-2 {
+        font-size: calc((13/320)*100vw) !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title {
+        padding: 1px 20px;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title p {
+        font-size: calc((10/320)*100vw) !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_content_wrapper h2 span {
+        font-size: calc((23/320)*100vw) !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_content_wrapper button {
+        font-size: 10px !important;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title:after {
+        width: 8px;
+        top: 47%;
+    }
+
+    .home_common_block .home_enterprise_card .home_enterprise_content .home_enterprise_title:before {
+        width: 8px;
+        top: 47%;
+    }
+
+    /* end viksit bharat */
+
+    /* start contact us */
+    .home_common_block img {
+        width: calc((300/320)*100vw);
+    }
+
+    /* end contact us */
 
 }
-
-/* Small tablets (481px to 768px) */
-@media (min-width: 481px) and (max-width: 768px) {}
-
-/* Tablets & small desktops (769px to 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {}
-
-/* Large screens (above 1024px) */
-@media (max-width: 1025px) {}

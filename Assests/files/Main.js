@@ -12,86 +12,34 @@ const SecotorSwiper = new Swiper('.SecotorSwiper', {
     freeModeMomentum: false,
     grabCursor: true,
 });
-
-const gallerySwiper = new Swiper('.gallerySwiper', {
-    slidesPerView: 'auto',
-    spaceBetween: 20,
-    loop: true,
-    speed: 3000,
-    autoplay: {
-        delay: 0,
-        disableOnInteraction: false,
-    },
-    freeMode: true,
-    freeModeMomentum: false,
-    grabCursor: true,
-    on: {
-        slideChange: function () {
-            document.querySelectorAll('.gallerySwiper .swiper-slide').forEach(slide => {
-                slide.classList.remove('active-card');
-            });
-            const activeIndex = this.realIndex + 1;
-            const activeSlide = this.slides[activeIndex];
-            if (activeSlide) {
-                activeSlide.classList.add('active-card');
+function SliderUpdate() {
+    const gallerySwiper = new Swiper('.gallerySwiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        loop: true,
+        speed: 3000,
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+        },
+        freeMode: true,
+        freeModeMomentum: false,
+        grabCursor: true,
+        on: {
+            slideChange: function () {
+                document.querySelectorAll('.swiper-wrapper .swiper-slide').forEach(slide => {
+                    slide.classList.remove('active-card');
+                });
+                const activeIndex = this.realIndex + 1;
+                const activeSlide = this.slides[activeIndex];
+                if (activeSlide) {
+                    activeSlide.classList.add('active-card');
+                }
             }
         }
-    }
-});
-
-// Initialize Video Swiper
-const videoSwiper = new Swiper('.videoSwiper', {
-    slidesPerView: 'auto',
-    spaceBetween: 20,
-    loop: true,
-    speed: 3000,
-    autoplay: {
-        delay: 0,
-        disableOnInteraction: false,
-    },
-    freeMode: true,
-    freeModeMomentum: false,
-    grabCursor: true,
-    on: {
-        slideChange: function () {
-            document.querySelectorAll('.videoSwiper .swiper-slide').forEach(slide => {
-                slide.classList.remove('active-card');
-            });
-            const activeIndex = this.realIndex + 1;
-            const activeSlide = this.slides[activeIndex];
-            if (activeSlide) {
-                activeSlide.classList.add('active-card');
-            }
-        }
-    }
-});
-
-// Initialize Video Swiper
-const testimanialsSwiper = new Swiper('.testimanialsSwiper', {
-    slidesPerView: 'auto',
-    spaceBetween: 20,
-    loop: true,
-    speed: 3000,
-    autoplay: {
-        delay: 0,
-        disableOnInteraction: false,
-    },
-    freeMode: true,
-    freeModeMomentum: false,
-    grabCursor: true,
-    on: {
-        slideChange: function () {
-            document.querySelectorAll('.testimanialsSwiper .swiper-slide').forEach(slide => {
-                slide.classList.remove('active-card');
-            });
-            const activeIndex = this.realIndex + 1;
-            const activeSlide = this.slides[activeIndex];
-            if (activeSlide) {
-                activeSlide.classList.add('active-card');
-            }
-        }
-    }
-});
+    });
+}
+SliderUpdate()
 // Tab button active state handling
 function openTab(evt, tabName) {
     const tabContents = document.querySelectorAll('.tabcontent');
@@ -105,42 +53,10 @@ function openTab(evt, tabName) {
     const activeTab = document.getElementById(tabName);
     if (activeTab) {
         activeTab.style.display = 'block';
-
-        // Force reflow to ensure Swiper can detect new layout
-        activeTab.offsetHeight;
-
-        // Defer Swiper updates to allow full DOM paint
-        setTimeout(() => {
-            if (tabName === 'photo') {
-                gallerySwiper.update();
-                gallerySwiper.autoplay.start();
-            } else {
-                gallerySwiper.autoplay.stop();
-            }
-
-            if (tabName === 'video') {
-                videoSwiper.update();
-                videoSwiper.autoplay.start();
-            } else {
-                videoSwiper.autoplay.stop();
-            }
-            if (tabName === 'testimanials') {
-                testimanialsSwiper.update();
-                testimanialsSwiper.autoplay.start();
-            } else {
-                testimanialsSwiper.autoplay.stop();
-            }
-        }, 50); // Small delay ensures Swiper updates after visibility
     }
-
-    // Set active class on clicked tab
     evt.currentTarget.classList.add('tab_btn_active');
+    setTimeout(SliderUpdate, 1000);
 }
-
-
-
-
-
 // start preloader overlay
 window.addEventListener("load", function () {
     const preloader = document.getElementById("preloader");
@@ -161,7 +77,7 @@ function closeDisclaimer() {
     }, 300);
 }
 window.addEventListener('load', () => {
-    setTimeout(closeDisclaimer, 10);
+    setTimeout(closeDisclaimer, 3000);
 });
 //disclaimer end
 
@@ -255,3 +171,20 @@ function closeVideoPlayer() {
     Player_video_src.pause();
 }
 //end for video player
+
+//for vikshit bharat
+
+document.addEventListener('DOMContentLoaded', function () {
+    const groomSwiper = new Swiper('.groomSwiper', {
+        loop: true,
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+        },
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true,
+        },
+        speed: 1000
+    });
+});
