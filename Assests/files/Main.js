@@ -30,7 +30,7 @@ function SliderUpdate() {
                 document.querySelectorAll('.swiper-wrapper .swiper-slide').forEach(slide => {
                     slide.classList.remove('active-card');
                 });
-                const activeIndex = this.realIndex + 1;
+                const activeIndex = this.realIndex;
                 const activeSlide = this.slides[activeIndex];
                 if (activeSlide) {
                     activeSlide.classList.add('active-card');
@@ -77,7 +77,7 @@ function closeDisclaimer() {
     }, 300);
 }
 window.addEventListener('load', () => {
-    setTimeout(closeDisclaimer, 3000);
+    setTimeout(closeDisclaimer, 5000);
 });
 //disclaimer end
 
